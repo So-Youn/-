@@ -1,0 +1,24 @@
+package hdfs.exam;
+/*
+ * -hdfs의 파일을 읽어서 새로운 파일을 생성
+ * -input 파일 경로, output 파일 경로를 명령행 매개변수로 클래스파일
+ *  실행 결과 캡쳐해서 메일 전송
+ *  
+ */
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FileSystem;
+
+public class HDFSCopyTest {
+	public static void main(String[] args) {
+		Configuration conf = new Configuration();
+		
+		FileSystem hdfs = null;
+		
+		FSDataOutputStream hdfsout = null;
+		
+		hdfs=FileSystem.get(conf);
+	}
+
+}
