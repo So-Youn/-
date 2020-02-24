@@ -1,7 +1,7 @@
 package mapred.basic;
 
 //라인 하나에 대해 처리하는 메소드
-
+//Mapper => 데이터를 분류하는 역할
 import java.io.IOException;
 import java.util.StringTokenizer;
 
@@ -13,7 +13,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 /*
  * Mapper
  * 1. Mapper 클래스를 상속한다
- *  => Mapper에 전달될 input데이터의 key,value타입과 Mapper의 실행 결과로 출력되는 output데이터의 key,value타입을 정의]
+ *  => Mapper에 전달될 input데이터의 key,value타입과 Mapper의 실행 결과로 출력되는 output데이터의 key,value타입을 정의
  * 2.map메소드를 오버라이딩해서 map작업을 수행하면서 처리할 내용을 구현
  *  => 입력된 값을 분석하기 위한 메소드 : 입력된 데이터에 조건을 적용해서 원하는 데이터를 추출하기 위한 반복작업을 수행
  *  
