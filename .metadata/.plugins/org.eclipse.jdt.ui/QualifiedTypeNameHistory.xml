@@ -11,6 +11,12 @@
 <fullyQualifiedTypeName name="javax.xml.soap.Text"/>
 <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="org.apache.hadoop.io.IntWritable"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.io.Text"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.WritableComparable"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.WritableUtils"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.Partitioner"/>
+<fullyQualifiedTypeName name="mapreduce.air.sort.CustomKey"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.IntWritable"/>
 </qualifiedTypeNameHistroy>

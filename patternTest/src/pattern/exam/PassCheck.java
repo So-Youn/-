@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class PassCheck {
 	public static boolean isPass(String str) {
-		String passreg="";
+		String passreg="^.{8,15}";
 		return Pattern.matches(passreg, str);
 	}
 	public static void main(String[] args) {
