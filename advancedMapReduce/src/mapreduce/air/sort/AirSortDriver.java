@@ -35,11 +35,18 @@ public class AirSortDriver extends Configured implements Tool{
 		GenericOptionsParser parser = new GenericOptionsParser(getConf(), optionlist);
 		String[] otherArgs = parser.getRemainingArgs();	//args[0]사용하지 않고 otherArgs[0] 사용.
 		
-		Job job = new Job(getConf(), "aircombiner");
+		Job job = new Job(getConf(), "air_sort");
 		job.setMapperClass(AirSortMapper.class);
-		job.setCombinerClass(AirSortReducer.class); //미니 리듀서처럼 작동
 		job.setReducerClass(AirSortReducer.class);
 		job.setJarByClass(AirSortDriver.class);
+		
+		//Shuffle할 때 사용할 클래스를 사용자 정의 클래스가 실행되도록 등록
+		job.setPartitionerClass(AirSortPartitioner.class);
+		job.setGroupingComparatorClass(GroupKeyComparator.class);
+		job.setSortComparatorClass(CustomKeyComparator.class);
+		job.setMapOutputKeyClass(CustomKey.class);
+		job.setMapOutputValueClass(IntWritable.class);
+		
 		
 		job.setInputFormatClass(TextInputFormat.class);
 		job.setOutputFormatClass(TextOutputFormat.class);

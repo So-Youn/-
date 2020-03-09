@@ -23,12 +23,11 @@ public class CustomKey implements WritableComparable<CustomKey>{
 		this.month = month;
 	}
 	
-	/*@Override
+    @Override
 	public String toString() {
 		//StringBuffer sb = new StringBuffer();
 		return (new StringBuffer()).append(year).append(",").append(month).toString();
-	}*/
-	
+	}
 	public String getYear() {
 		return year;
 	}
