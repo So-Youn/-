@@ -8,7 +8,7 @@ public class GroupKeyComparator extends WritableComparator {
 	protected GroupKeyComparator() { //기본 생성자
 		super(CustomKey.class,true);
 		}
-
+	@SuppressWarnings("rawtypes")
 	@Override
 	public int compare(WritableComparable obj1, WritableComparable obj2) {
 		CustomKey key1 = (CustomKey)obj1;

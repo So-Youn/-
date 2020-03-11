@@ -3,26 +3,37 @@ package mapreduce.air.sort;
 import java.io.IOException;
 
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 public class AirSortReducer extends Reducer<CustomKey, IntWritable, CustomKey, IntWritable>{
 	IntWritable resultVal = new IntWritable();
 	CustomKey resultKey = new CustomKey();
-	
+	Text appenddata = new Text();
+	String data = "";
 	@Override
 	protected void reduce(CustomKey key, Iterable<IntWritable> values,
 			Reducer<CustomKey, IntWritable, CustomKey, IntWritable>.Context context) throws IOException, InterruptedException {
 		int sum=0;
 		//month데이터 추출
+		data = data +"reduce호출";
+		appenddata.set(data);
 		Integer beforeMonth = key.getMonth();
-		
+		int count =0;
 		for(IntWritable value:values) {
+			if(count<10) {
+				System.out.println("reduce =>"+key);
+				count++;
+			}
 			if(beforeMonth!=key.getMonth()) {
-				resultKey.setYear(key.getYear());
+				resultKey.setYear(key.getYear()+","+appenddata+"(테스트 문자열)"+key.hashCode()+"(해쉬코드),"+key.getMapkey()+"(map에서 전달한 키)");
+				//병령 - 쓰레드 처리
+				//내부에서 동일한 custom이용하는 것 알 수 있음
+				
 				resultKey.setMonth(beforeMonth);
 				resultVal.set(sum);
 				context.write(resultKey, resultVal);
-				sum=0;
+				sum=0; //month가 달라지므로 초기화.
 			}
 			sum = sum + value.get();
 			beforeMonth = key.getMonth();

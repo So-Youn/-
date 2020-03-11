@@ -15,8 +15,13 @@
 <fullyQualifiedTypeName name="org.apache.hadoop.io.WritableComparable"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.io.WritableUtils"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.Partitioner"/>
-<fullyQualifiedTypeName name="mapreduce.air.sort.CustomKey"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.WritableComparator"/>
+<fullyQualifiedTypeName name="mapreduce.air.sort.AirSortMapper"/>
+<fullyQualifiedTypeName name="mapreduce.air.sort.AirSortPartitioner"/>
+<fullyQualifiedTypeName name="mapreduce.air.sort.GroupKeyComparator"/>
+<fullyQualifiedTypeName name="mapreduce.air.sort.CustomKeyComparator"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.io.IntWritable"/>
+<fullyQualifiedTypeName name="mapreduce.air.sort.CustomKey"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

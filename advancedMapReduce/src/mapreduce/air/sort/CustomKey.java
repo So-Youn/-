@@ -10,9 +10,13 @@ import org.apache.hadoop.io.WritableUtils;
 //맵리듀스 프레임워크 내부에서 키와 value는 네트워크에서 주고 받는 값이므로 
 //네트워크 전송을 하기 위해 제공되는 Writable타입이어야 하므로 WritatbleComparable을 상속받아 작성한다.
 
+//DTO랑 비슷하지만 Customkey는 네트워크로 주고받을 key. -> 직렬화, 역직렬화 추가시켜주어야 한다.
+
 public class CustomKey implements WritableComparable<CustomKey>{
 	private String year;
 	private Integer month;
+	private Long mapkey;
+	
 	public CustomKey() {
 		
 	}
@@ -23,6 +27,15 @@ public class CustomKey implements WritableComparable<CustomKey>{
 		this.month = month;
 	}
 	
+	
+	public CustomKey(String year, Integer month, Long mapkey) {
+		super();
+		this.year = year;
+		this.month = month;
+		this.mapkey = mapkey;
+	}
+
+	//reduce에서 내보지는 output 출력
     @Override
 	public String toString() {
 		//StringBuffer sb = new StringBuffer();
@@ -43,6 +56,14 @@ public class CustomKey implements WritableComparable<CustomKey>{
 	public void setMonth(Integer month) {
 		this.month = month;
 	}
+	public Long getMapkey() {
+		return mapkey;
+	}
+
+	public void setMapkey(Long mapkey) {
+		this.mapkey = mapkey;
+	}
+	
 	/*
 	 * 데이터를 쓰고 읽는 작업을 처리
 	 * 데이터를 쓰기 - 직렬화 
@@ -52,16 +73,20 @@ public class CustomKey implements WritableComparable<CustomKey>{
 	 */
 	
 
+
+	//직렬화
 	@Override
 	public void write(DataOutput out) throws IOException {
 		WritableUtils.writeString(out,year);
 		out.writeInt(month);
+		out.writeLong(mapkey);
 	}
 	//역직렬화
 	@Override
 	public void readFields(DataInput in) throws IOException {
 		year = WritableUtils.readString(in);
 		month = in.readInt();
+		mapkey = in.readLong();
 	}
 	/*
 	 * 사용자가 만들어 놓은 키를 기준으로 정렬하기 위해서 비교하게 할 메소드(non-Javadoc)
