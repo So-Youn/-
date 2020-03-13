@@ -1,7 +1,6 @@
 package shop.bigdata.comment;
 
 import java.io.IOException;
-import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
