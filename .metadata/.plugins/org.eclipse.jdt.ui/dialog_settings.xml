@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
+	<item value="3" key="TypeHierarchyViewPart.orientation"/>
 	<item value="0" key="CallHierarchyViewPart.call_mode"/>
 	<item value="2" key="CallHierarchyViewPart.field_mode"/>
+	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
 	<item value="C:\iot\setup\tool" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="3" key="CallHierarchyViewPart.orientation"/>
 	<item value="500" key="CallHierarchyViewPart.ratio0"/>
+	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="500" key="CallHierarchyViewPart.ratio1"/>
 	<item value="1" key="SearchScopeActionGroup.search_scope_type"/>
 	<item value="500" key="CallHierarchyViewPart.ratio3"/>
 	<list key="SearchScopeActionGroup.working_set">
 	</list>
-	<section name="org.eclipse.ltk.ui.refactoring.settings">
-		<item value="false" key="renameSubpackages"/>
-		<item value="false" key="updateQualifiedNames"/>
-		<item value="*" key="patterns"/>
-		<item value="false" key="updateSimilarElements"/>
-		<item value="false" key="updateTextualMatches"/>
-		<item value="1" key="updateSimilarElementsMatchStrategy"/>
-	</section>
-	<section name="SearchInDialog">
-		<item value="true" key="SearchInProjects"/>
-		<item value="true" key="SearchInAppLibs"/>
-		<item value="true" key="SearchInJRE"/>
-		<item value="true" key="SearchInSources"/>
-	</section>
-	<section name="GenerateConstructorUsingFieldsSelectionDialog">
-		<item value="false" key="OmitCallToSuper"/>
-	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
 		<item value="true" key="group_libraries"/>
@@ -37,15 +25,8 @@
 		<item value="531" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="678" key="DIALOG_HEIGHT"/>
-		<item value="383" key="DIALOG_X_ORIGIN"/>
+		<item value="232" key="DIALOG_X_ORIGIN"/>
 		<item value="48" key="DIALOG_Y_ORIGIN"/>
-	</section>
-	<section name="NewClassWizardPage">
-		<item value="false" key="create_constructor"/>
-		<item value="true" key="create_unimplemented"/>
-	</section>
-	<section name="OptionalMessageDialog.hide.">
-		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
 	<section name="SourceActionDialog.constructors">
 		<item value="false" key="SynchronizedModifier"/>
@@ -59,57 +40,12 @@
 		<item value="580" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH"/>
 		<item value="false" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
 	</section>
-	<section name="DialogBounds_OverrideMethodDialog">
-		<item value="539" key="DIALOG_WIDTH"/>
-		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="467" key="DIALOG_HEIGHT"/>
-		<item value="636" key="DIALOG_X_ORIGIN"/>
-		<item value="195" key="DIALOG_Y_ORIGIN"/>
-	</section>
-	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item value="540" key="DIALOG_WIDTH"/>
-		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="696" key="DIALOG_HEIGHT"/>
-		<item value="378" key="DIALOG_X_ORIGIN"/>
-		<item value="36" key="DIALOG_Y_ORIGIN"/>
-	</section>
-	<section name="DialogBounds_GenerateToStringDialog">
-		<item value="516" key="DIALOG_WIDTH"/>
-		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="691" key="DIALOG_HEIGHT"/>
-		<item value="390" key="DIALOG_X_ORIGIN"/>
-		<item value="40" key="DIALOG_Y_ORIGIN"/>
-	</section>
-	<section name="RefactoringWizard.preview">
-		<item value="600" key="width"/>
-		<item value="400" key="height"/>
-	</section>
-	<section name="CallHierarchySearchScope">
-	</section>
-	<section name="SourceActionDialog.methods">
-		<item value="true" key="IgnoreDefault"/>
-		<item value="false" key="SynchronizedModifier"/>
-		<item value="false" key="Comments"/>
-		<item value="1" key="VisibilityModifier"/>
-		<item value="0" key="StringStyle"/>
-		<item value="0" key="ToStringTemplateSelected"/>
-		<item value="false" key="LimitElements"/>
-		<item value="false" key="SkipNull"/>
-		<item value="false" key="FinalModifier"/>
-		<item value="10" key="LimitValue"/>
-	</section>
 	<section name="OverrideMethodDialog">
 		<item value="true" key="showtypes"/>
 	</section>
-	<section name="NewPackageWizardPage">
-		<item value="false" key="create_package_info_java"/>
-	</section>
-	<section name="quick_assist_proposal_size">
-	</section>
-	<section name="BuildPathsPropertyPage">
-		<item value="2" key="pageIndex"/>
-	</section>
 	<section name="completion_proposal_size">
+		<item value="221" key="contextSelector.size.y"/>
+		<item value="331" key="contextSelector.size.x"/>
 	</section>
 	<section name="JarPackageWizard">
 		<item value="false" key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES"/>
@@ -131,6 +67,9 @@
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="Bigdata\mapred-exam.jar"/>
+			<item value="Bigdata/mapred-exam.jar"/>
+			<item value="C:\iot\mapred-exam.jar"/>
 			<item value="advancedMapReduce\mapred-exam.jar"/>
 			<item value="advancedMapReduce/mapred-exam.jar"/>
 		</list>
@@ -140,5 +79,86 @@
 		<item value="false" key="RemoveFinal"/>
 	</section>
 	<section name="JavaElementSearchActions">
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
+		<item value="false" key="updateSimilarElements"/>
+		<item value="false" key="updateTextualMatches"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
+	</section>
+	<section name="SearchInDialog">
+		<item value="true" key="SearchInProjects"/>
+		<item value="true" key="SearchInAppLibs"/>
+		<item value="true" key="SearchInJRE"/>
+		<item value="true" key="SearchInSources"/>
+	</section>
+	<section name="GenerateConstructorUsingFieldsSelectionDialog">
+		<item value="false" key="OmitCallToSuper"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item value="false" key="create_constructor"/>
+		<item value="true" key="create_unimplemented"/>
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+	</section>
+	<section name="DialogBounds_OverrideMethodDialog">
+		<item value="539" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="467" key="DIALOG_HEIGHT"/>
+		<item value="636" key="DIALOG_X_ORIGIN"/>
+		<item value="195" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item value="540" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="696" key="DIALOG_HEIGHT"/>
+		<item value="223" key="DIALOG_X_ORIGIN"/>
+		<item value="36" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="DialogBounds_GenerateToStringDialog">
+		<item value="516" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="691" key="DIALOG_HEIGHT"/>
+		<item value="247" key="DIALOG_X_ORIGIN"/>
+		<item value="40" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
+	<section name="CallHierarchySearchScope">
+	</section>
+	<section name="DialogBounds_AddDelegateMethodsDialog">
+		<item value="561" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="554" key="DIALOG_HEIGHT"/>
+		<item value="105" key="DIALOG_X_ORIGIN"/>
+		<item value="131" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item value="true" key="IgnoreDefault"/>
+		<item value="false" key="SynchronizedModifier"/>
+		<item value="false" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
+		<item value="0" key="StringStyle"/>
+		<item value="0" key="ToStringTemplateSelected"/>
+		<item value="false" key="LimitElements"/>
+		<item value="false" key="SkipNull"/>
+		<item value="false" key="FinalModifier"/>
+		<item value="10" key="LimitValue"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="3" key="index"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
 	</section>
 </section>
