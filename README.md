@@ -17,3 +17,11 @@ Mapper , Reducer , Driver 기초
 
 ### patternTest
 
+정규 표현 식
+
+### bigdataShop
+
+hadoop을 이용한 쇼핑몰 만들기
+
+
+
