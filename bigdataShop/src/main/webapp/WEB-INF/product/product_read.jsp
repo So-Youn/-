@@ -263,10 +263,7 @@ A.info:hover {
 		<input type="hidden" name="prd_no" value="${product.prd_no }" />
 		<!-- 세션에 있는 로그인 아이디 정보를 꺼내서 넣어야 하나 임의로 
 				   바꿔가며 테스트 한다. -->
-		<input type="hidden" name="mem_id" value="lee" />
-
-		<textarea rows="2" cols="100" name="pro_comment"></textarea>
-		<input type="submit" value="등록" />
+		
 		<table class="table table-bordered" border="1"
 			style="border-collapse: collapse; width: 70%;">
 			<tr>
@@ -284,6 +281,10 @@ A.info:hover {
 				</c:forEach>
 			</c:if>
 		</table>
+		<input type="hidden" name="mem_id" value="lee" />
+
+		<textarea rows="2" cols="100" name="pro_comment"></textarea>
+		<input type="submit" value="등록" />
 	</form>
 
 
