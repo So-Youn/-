@@ -9,22 +9,50 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="post" action="/mongodb/score/search">
-		<h1>°Ë»öÇÏ±â</h1>
-		°Ë»öÇÒ ÇÊµå¼±ÅÃ: <select name="field">
-			<option value="name">¼º¸í</option>
-			<option value="id">¾ÆÀÌµğ</option>
-			<option value="addr">ÁÖ¼Ò</option>
-			<option value="dept">ºÎ¼­</option>
+	<form method="post" action="/mongoTest/score/search">
+		<h1>ê²€ìƒ‰í•˜ê¸°</h1>
+		í•„ë“œì„ íƒ: <select name="key">
+			<option value="name">ì„±ëª…</option>
+			<option value="id">ì•„ì´ë””</option>
+			<option value="addr">ì£¼ì†Œ</option>
+			<option value="dept">ë¶€ì„œ</option>
 			<option value="java">java</option>
 			<option value="spring">spring</option>
 			<option value="servlet">servlet</option>
 			<option value="bonus">bonus</option>
-
-		</select>
-		<h3>°Ë»ö°ª:</h3>
+		 </select>
+	  	ìˆ«ì ì—°ì‚°: <select name="opr">
+			<option value="">=</option>
+			<option value="">></option>
+			<option value="">>=</option>
+			<option value="">&lt;</option>
+			<option value="">&lt;=</option>
+			</select>
+		
+		<h3>ê²€ìƒ‰ê°’:</h3>
 		<input type="text" name="value" />
-		<input type="submit" value="°Ë»ö"/>
+		<hr/>
+		<!-- í•„ë“œì„ íƒ: <select name="key">
+			<option value="name">ì„±ëª…</option>
+			<option value="id">ì•„ì´ë””</option>
+			<option value="addr">ì£¼ì†Œ</option>
+			<option value="dept">ë¶€ì„œ</option>
+			<option value="java">java</option>
+			<option value="spring">spring</option>
+			<option value="servlet">servlet</option>
+			<option value="bonus">bonus</option>
+		 </select>
+		 ìˆ«ì ì—°ì‚°: <select name="opr">
+			<option value="eq">=</option>
+			<option value="gt">></option>
+			<option value="gte">>=</option>
+			<option value="lt">&lt;</option>
+			<option value="lte">&lt;=</option>
+			</select>
+		
+		<h3>ê²€ìƒ‰ê°’:</h3>
+		<input type="text" name="value2" /> -->
+		<input type="submit" value="ê²€ìƒ‰"/>
 	</form>
 </body>
 </html>

@@ -12,17 +12,17 @@
 <body>
 	<div class="container-fluid">
 			<form role="form" class="form-horizontal"
-				action="/mongodb/score/insert" method="POST">
+				action="/mongoTest/score/insert" method="POST">
 				<fieldset>
 					<div id="legend">
-						<legend>¾Æ·¡ ¾ç½ÄÀ» ÀÛ¼ºÇØÁÖ¼¼¿ä.</legend>
+						<legend>ì•„ëž˜ ì–‘ì‹ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.</legend>
 					</div>
 					<div class="form-group">
-						<!-- ºÎ¼­ÄÚµå -->
-						<label class="control-label col-sm-2" for="orgcode">¾ÆÀÌµð</label>
+						<!-- ë¶€ì„œì½”ë“œ -->
+						<label class="control-label col-sm-2" for="orgcode">ì•„ì´ë””</label>
 						<div class="col-sm-3">
 							<input type="text" id="orgcode" name="id"
-								placeholder="¾ÆÀÌµð" class="form-control"
+								placeholder="ì•„ì´ë””" class="form-control"
 								 required>
 						</div>
 					</div>
@@ -30,11 +30,11 @@
 					
 					
 					<div class="form-group">
-						<!-- ºÎ¼­¸í-->
-						<label class="control-label col-sm-2" for="orgname">¼º¸í</label>
+						<!-- ë¶€ì„œëª…-->
+						<label class="control-label col-sm-2" for="orgname">ì„±ëª…</label>
 						<div class="col-sm-3">
 							<input type="text" id="name" name="name"
-								placeholder="¼º¸í" class="form-control" minlength="4" required>
+								placeholder="ì„±ëª…" class="form-control" required>
 
 						</div>
 					</div>
@@ -46,30 +46,30 @@
 
 					
 					<div class="form-group">
-						<!-- ºÎ¼­À§Ä¡-->
-						<label class="control-label col-sm-2" for="orgloc">ºÎ¼­¸í</label>
+						<!-- ë¶€ì„œìœ„ì¹˜-->
+						<label class="control-label col-sm-2" for="orgloc">ë¶€ì„œëª…</label>
 						<div class="col-sm-3">
 							<input type="text" id="dept" name="dept"
-								placeholder="ºÎ¼­¸í" class="form-control" minlength="4" >
+								placeholder="ë¶€ì„œëª…" class="form-control" >
 
 						</div>
 					</div>
 					<div class="form-group">
-						<!-- ÀüÈ­¹øÈ£-->
-						<label class="control-label col-sm-2" for="orgtel">ÁÖ¼Ò</label>
+						<!-- ì „í™”ë²ˆí˜¸-->
+						<label class="control-label col-sm-2" for="orgtel">ì£¼ì†Œ</label>
 						<div class="col-sm-3">
 							<input type="text" id="addr" name="addr" 
-							placeholder="ÁÖ¼Ò"
-								class="form-control" minlength="4" required>
+							placeholder="ì£¼ì†Œ"
+								class="form-control" required>
 
 						</div>
 					</div>
 					<div class="form-group">
-						<!-- ºÎ¼­ÄÚµå -->
-						<label class="control-label col-sm-2" for="orgcode">ÀÚ¹ÙÁ¡¼ö</label>
+						<!-- ë¶€ì„œì½”ë“œ -->
+						<label class="control-label col-sm-2" for="orgcode">ìžë°”ì ìˆ˜</label>
 						<div class="col-sm-3">
 							<input type="text" id="java" name="java"
-								placeholder="ÀÚ¹ÙÁ¡¼ö" class="form-control"
+								placeholder="ìžë°”ì ìˆ˜" class="form-control"
 								 required>
 						</div>
 					</div>
@@ -77,11 +77,11 @@
 					
 					
 					<div class="form-group">
-						<!-- ºÎ¼­¸í-->
-						<label class="control-label col-sm-2" for="orgname">¼­ºí¸´</label>
+						<!-- ë¶€ì„œëª…-->
+						<label class="control-label col-sm-2" for="orgname">ì„œë¸”ë¦¿</label>
 						<div class="col-sm-3">
 							<input type="text" id="servlet" name="servlet"
-								placeholder="¼­ºí¸´" class="form-control" minlength="4" required>
+								placeholder="ì„œë¸”ë¦¿" class="form-control" required>
 
 						</div>
 					</div>
@@ -93,7 +93,7 @@
 
 					
 					<div class="form-group">
-						<!-- ºÎ¼­À§Ä¡-->
+						<!-- ë¶€ì„œìœ„ì¹˜-->
 						<label class="control-label col-sm-2" for="orgloc">spring</label>
 						<div class="col-sm-3">
 							<input type="text" id="spring" name="spring"
@@ -102,12 +102,12 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<!-- ÀüÈ­¹øÈ£-->
-						<label class="control-label col-sm-2" for="orgtel">º¸³Ê½º</label>
+						<!-- ì „í™”ë²ˆí˜¸-->
+						<label class="control-label col-sm-2" for="orgtel">ë³´ë„ˆìŠ¤</label>
 						<div class="col-sm-3">
 							<input type="text" id="bonus" name="bonus" 
-							placeholder="º¸³Ê½º"
-								class="form-control" minlength="4" required value="10000">
+							placeholder="ë³´ë„ˆìŠ¤"
+								class="form-control" required value="10000">
 
 						</div>
 					</div>
@@ -115,7 +115,7 @@
 					<div class="form-group">
 						<!-- Button -->
 						<div class="col-sm-3 col-sm-offset-2">
-							<input type="submit" value="°¡ÀÔÇÏ±â" class="btn btn-success"/>
+							<input type="submit" value="ê°€ìž…í•˜ê¸°" class="btn btn-success"/>
 							
 						</div>
 					</div>

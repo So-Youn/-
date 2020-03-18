@@ -3,6 +3,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -17,22 +18,20 @@
 	<%ScoreDTO dto = (ScoreDTO)request.getAttribute("document"); %>
 	<div class="container-fluid">
 		<form role="form" class="form-horizontal"
-			action="/mongodb/score/insert" method="POST">
+			action="/mongoTest/score/insert" method="POST">
 			<fieldset>
 				<div id="legend">
-					<legend>¾Æ·¡ ¾ç½ÄÀ» ÀÛ¼ºÇØÁÖ¼¼¿ä.</legend>
+					<legend>ì•„ëž˜ì— ë°ì´í„°ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”</legend>
 				</div>
 				<div class="form-group">
-					<!-- ºÎ¼­ÄÚµå -->
-					<label class="control-label col-sm-2" for="orgcode">¾ÆÀÌµð</label>
+					<label class="control-label col-sm-2" for="orgcode">ì•„ì´ë””</label>
 					<%= dto.getId() %>
 				</div>
 
 
 
 				<div class="form-group">
-					<!-- ºÎ¼­¸í-->
-					<label class="control-label col-sm-2" for="orgname">¼º¸í</label>
+					<label class="control-label col-sm-2" for="orgname">ì„±ëª…</label>
 					<%= dto.getName() %>
 				</div>
 
@@ -43,26 +42,22 @@
 
 
 				<div class="form-group">
-					<!-- ºÎ¼­À§Ä¡-->
-					<label class="control-label col-sm-2" for="orgloc">ºÎ¼­¸í</label>
+					<label class="control-label col-sm-2" for="orgloc">ë¶€ì„œëª…</label>
 					<%= dto.getDept() %>
 				</div>
 				<div class="form-group">
-					<!-- ÀüÈ­¹øÈ£-->
-					<label class="control-label col-sm-2" for="orgtel">ÁÖ¼Ò</label>
+					<label class="control-label col-sm-2" for="orgtel">ì£¼ì†Œ</label>
 					<%= dto.getAddr() %>
 				</div>
 				<div class="form-group">
-					<!-- ºÎ¼­ÄÚµå -->
-					<label class="control-label col-sm-2" for="orgcode">ÀÚ¹ÙÁ¡¼ö</label>
+					<label class="control-label col-sm-2" for="orgcode">ìžë°”ì ìˆ˜</label>
 					<%= dto.getJava() %>
 				</div>
 
 
 
 				<div class="form-group">
-					<!-- ºÎ¼­¸í-->
-					<label class="control-label col-sm-2" for="orgname">¼­ºí¸´</label>
+					<label class="control-label col-sm-2" for="orgname">ì„œë¸”ë¦¿ì ìˆ˜</label>
 					<%= dto.getServlet() %>
 				</div>
 
@@ -72,23 +67,21 @@
 
 
 
-				<div class="form-group">
-					<!-- ºÎ¼­À§Ä¡-->
+				<%-- <div class="form-group">
 					<label class="control-label col-sm-2" for="orgloc">spring</label>
 					<%= dto.getSpring() %>
 				</div>
 				<div class="form-group">
-					<!-- ÀüÈ­¹øÈ£-->
-					<label class="control-label col-sm-2" for="orgtel">º¸³Ê½º</label>
+					<label class="control-label col-sm-2" for="orgtel">ï¿½ï¿½ï¿½Ê½ï¿½</label>
 					<%= dto.getBonus() %>
-				</div>
+				</div> --%>
 
 				<div class="form-group">
 					<!-- Button -->
 					<div class="col-sm-3 col-sm-offset-2">
 						<input type="button" 
-						value="¼öÁ¤ÇÏ±â" 
-onclick="location.href='/mongodb/score/detail?key=id&value=<%=dto.getId()%>&action=update'"						class="btn btn-success" />
+						value="ìˆ˜ì •" 
+onclick="location.href='/mongoTest/score/detail?key=id&value=<%=dto.getId()%>&action=update'"						class="btn btn-success" />
 
 					</div>
 				</div>

@@ -34,6 +34,6 @@
 		<beans:constructor-arg ref="mongo"/>
 		<beans:constructor-arg name="databaseName" value="bigdata"/>
 	</beans:bean>
-	
+	<mongo:repositories base-package="spring.data.mongodb.dto"/>
 	
 </beans:beans>

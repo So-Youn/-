@@ -10,5 +10,6 @@ public interface ScoreMongoDAO {
 	public void insertDocument(ScoreDTO doc);
 	public void insertAllDocument(List<ScoreDTO> docs);
 	public void update(ScoreDTO document);
-	public void test1();
-}
+	public List<ScoreDTO> findAll();
+	public List<ScoreDTO> findAll(int pageNo);
+	}

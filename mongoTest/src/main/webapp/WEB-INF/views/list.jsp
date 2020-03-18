@@ -17,29 +17,28 @@
 	<hr/>
 	<table align="center" border="1" width="600">
 		<tr bgcolor="skyblue">
-			<th>¾ÆÀÌµğ</th><th>º¸³Ê½º</th><th>¼º¸í</th>
-			<th>ÁÖ¼Ò</th><th>ºÎ¼­¹øÈ£</th>
-			<th>»èÁ¦</th>
+			<th>ì•„ì´ë””</th><th>ì„±ëª…</th><th>ì£¼ì†Œ</th>
+			<th>ë¶€ì„œ</th>
+			<th>ì‚­ì œ</th>
 		</tr>
 		<%for(int i = 0;i<size;i++){
 			ScoreDTO user = mongolist.get(i);%>
 			<tr>
 				<td><a
- href="/mongodb/score/detail?key=id&value=<%=user.getId()%>&action=read"><%= user.getId() %></a></td>
-				<td><%= user.getBonus()%></td>
+ href="/mongoTest/score/detail?key=id&value=<%=user.getId()%>&action=READ"><%= user.getId() %></a></td>
 				<td><%= user.getName() %></td>
 				<td><%= user.getAddr() %></td>
 				<td><%= user.getDept()%></td>
 				<td>
-		<a href="mybatisDel.do?id=<%=user.getId() %>">»èÁ¦</a></td>
+		<a href="/mongoTest/score/delete.do?id=<%=user.getId() %>">ì‚­ì œ</a></td>
 			</tr>
 			
 		<%} %>
 		<tr>
 			<td colspan="6">
-			<a href="/mongodb/score/list?pageNo=0">1</a>
-			<a href="/mongodb/score/list?pageNo=1">2</a>
-			<a href="/mongodb/score/list?pageNo=2">3</a>
+			<a href="/mongoTest/score/paginglist?pageNo=0">1</a>
+			<a href="/mongoTest/score/paginglist?pageNo=1">2</a>
+			<a href="/mongoTest/score/paginglist?pageNo=2">3</a>
 			</td>
 		</tr>
 	</table>

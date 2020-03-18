@@ -8,13 +8,15 @@
 </head>
 <body>
 	<div>
-		<h1>╦Ы╟М╣П╨Я ╣╔юлем а╤х╦</h1>
+		<h1>К╙╫ЙЁ═К■■К╧└ К█╟Л²╢М└╟ Л║╟М ▄</h1>
 		<hr/>
-		<h3><a href="#">mongodb╣╔юлема╤х╦</a></h3>
-		<h3><a href="#">mongodb document ╩Пютго╠Б</a></h3>
-		<h3><a href="#">©╘╥╞╟Ё document ╩Пютго╠Б</a></h3>
-	    <h3><a href="#">╟к╩Ж</a></h3>
-	     <h3><a href="#">╟к╩Ж</a></h3>
+		<h3><a href="/mongoTest/score/list">mongodbК█╟Л²╢М└╟Л║╟М ▄</a></h3>
+		<h3><a href="/mongoTest/score/paginglist?pageNo=0">mongodbК█╟Л²╢М└╟Л║╟М ▄(М▌≤Л²╢Л╖∙Л╡≤К╕╛)</a></h3>
+		<!-- Л╡╚К╡┬Л╖╦ М▌≤Л²╢Л╖─ КЁ╢Л≈╛Лё╪Й╦╟ К∙▄К╛╦Л≈░ pageNo  -->
+		<h3><a href="/mongoTest/score/insert">mongodb document Л┌╫Л·┘М∙≤Й╦╟</a></h3>
+		<h3><a href="/mongoTest/score/multiInsert">Л≈╛К÷╛Й╟° document Л┌╫Л·┘М∙≤Й╦╟</a></h3>
+	    <h3><a href="/mongoTest/score/search">Й╡─Л┐┴</a></h3>
+	     <h3><a href="#">Й╡─Л┐┴</a></h3>
 	      
 	</div>
 </body>
